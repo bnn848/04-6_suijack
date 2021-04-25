@@ -10,7 +10,6 @@
 
   
   window.onload = function load() { // ロードした時に発火
-    let arr = [];
     for (let i = num.length -1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1)); // num[]を並べ替え
       [num[j], num[i]] = [num[i], num[j]];
@@ -21,11 +20,10 @@
       card.number = num[i];
       card.innerHTML = "";
       card.onclick = turnCard; // addEventListener('click',function());と同じことを埋め込む
-      arr.push(card);
       container.appendChild(card);
     }
 
-    console.log(num);
+    console.log(num); // カードの配置（答え）
   };
 
   let card;

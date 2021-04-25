@@ -67,6 +67,7 @@ button {
   box-shadow: 3px 3px #404040;
   cursor: pointer;
   user-select: none;
+  transition-duration: .5s;
 }
 
 button:hover {
